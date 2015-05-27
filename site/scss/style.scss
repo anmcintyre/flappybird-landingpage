@@ -1,0 +1,82 @@
+$font-color: #56762C;
+$link-color: #75BF30;
+$hover-link-color: #83D889;
+$background-color: lighten(#DCF7E8, 5);
+$dark-background-color: darken(#71C5CF, 25);
+$nav-color: lighten(#EBFCDC, 10);
+$sans-serif-font: 'Ubuntu', sans-serif;
+
+body{
+	color: $font-color;
+	background-color: $background-color;
+	font-family: $sans-serif-font;
+	margin: 0;
+} 
+
+nav{
+	width: 100%;
+	background-color: $dark-background-color;
+	text-align: center;
+	margin: 0;
+	ul{
+		margin-top: 0;
+		list-style: none;
+		text-align: center;
+		padding-left: 0px;
+	}
+	li{   
+	    display: inline-block;
+	    padding: 1em;
+	    @media screen and (max-width: 350px){
+	    	padding: 1em 0.5em;
+	    }
+	}
+	a{
+		color: $nav-color;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+	} 
+
+}
+ 
+h1{
+	font-size: 1.5em;
+	text-align: center;	
+}
+
+.features{
+	text-align: center;
+
+	img{
+		border: 3px solid $font-color;
+	}
+
+}
+
+.call-to-action{
+	text-align: center;
+
+	button{
+		margin-bottom: 1em;
+	}
+}
+
+footer{
+	text-align: center;
+	background-color: $dark-background-color;
+	color: $nav-color;
+	overflow: auto;
+	.icons {
+		list-style: none;
+		margin-top: 1em;
+		li{
+			display: inline-block;
+			padding: 1em;
+		}
+	}
+	p {
+		font-size: smaller;
+		margin-bottom: 2em;
+	}
+}
