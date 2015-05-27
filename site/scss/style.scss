@@ -1,6 +1,4 @@
 $font-color: darken(#71C5CF, 25);
-$link-color: #75BF30;
-$hover-link-color: #83D889;
 $background-color: lighten(#DCF7E8, 5);
 $dark-background-color: darken(#71C5CF, 25);
 $nav-color: lighten(#EBFCDC, 10);
@@ -50,6 +48,7 @@ h1{
 
 	img{
 		border: 3px solid $font-color;
+		width: 320px;
 	}
 
 }

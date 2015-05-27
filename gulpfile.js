@@ -13,7 +13,7 @@ var buffer = require('vinyl-buffer');
 
 //Javascript linting task
 gulp.task("jshint", function(){
-   return gulp.src('site/js/*.js')
+   return gulp.src('site/js/app.js')
    	.pipe(jshint())
 	.pipe(jshint.reporter("default"));
 });
@@ -34,7 +34,7 @@ gulp.task("html", function(){
 
 //Javascript build task, removes whitespace and concatenates
 gulp.task("scripts", function(){
-   return browserify("site/js/main.js")
+   return browserify("site/js/app.js")
       .bundle()
       .pipe(source("app.js"))
       .pipe(buffer())
