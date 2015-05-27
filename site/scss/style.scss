@@ -1,11 +1,11 @@
-$font-color: #56762C;
+$font-color: darken(#71C5CF, 25);
 $link-color: #75BF30;
 $hover-link-color: #83D889;
 $background-color: lighten(#DCF7E8, 5);
 $dark-background-color: darken(#71C5CF, 25);
 $nav-color: lighten(#EBFCDC, 10);
 $sans-serif-font: 'Ubuntu', sans-serif;
-
+ 
 body{
 	color: $font-color;
 	background-color: $background-color;

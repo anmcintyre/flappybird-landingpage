@@ -1,5 +1,5 @@
 body {
-  color: #56762C;
+  color: #318690;
   background-color: #f1fcf6;
   font-family: "Ubuntu", sans-serif;
   margin: 0; }
@@ -33,7 +33,7 @@ h1 {
 .features {
   text-align: center; }
   .features img {
-    border: 3px solid #56762C; }
+    border: 3px solid #318690; }
 
 .call-to-action {
   text-align: center; }
