@@ -17,6 +17,11 @@
         <script src="//code.jquery.com/jquery-2.1.4.min.js" defer></script>
         <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js" defer></script>
         <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js" defer></script>
+        <script>
+            //Picture element HTML5 shiv
+            document.createElement("picture");
+        </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.js" defer></script>
         <script src="js/app.js" defer></script>
         <style>
             body {
@@ -54,8 +59,7 @@ h1 {
 .features {
   text-align: center; }
   .features img {
-    border: 3px solid #318690;
-    width: 320px; }
+    border: 3px solid #318690; }
 
 .call-to-action {
   text-align: center; }
@@ -93,8 +97,16 @@ footer {
 
 <section class="features">
     <p>Play this fun and addicting Flappy Bird Clone web browser game!</p>
-    <img src="img/landingPage.jpg">
-            <h2>No downloads necessary!</h2>
+    <img src="img/landingPageSmall.jpg"
+        srcset="img/landingPageLarge.jpg 1024w,
+                img/landingPageMedium.jpg 640w,
+                img/landingPageSmall.jpg 320w"
+        sizes="(min-width: 1024px) 1024px,
+               (min-width: 640px) 640px,
+               (min-width: 320px) 320px"
+        alt="Flappy Bird Screenshot"
+        async />
+    <h2>No downloads necessary!</h2>
   </section>
 
 <section class="call-to-action">
